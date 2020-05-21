@@ -1,0 +1,11 @@
+'reinit'
+'open may2005.ctl'
+'set display color white'
+'c'
+'set grads off'
+'set vpage 0 11 0 8.5'
+'set lev 1000'
+'set t 77'
+'set cint 1'
+'d temp'
+

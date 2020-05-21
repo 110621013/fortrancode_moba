@@ -1,0 +1,18 @@
+'reinit'
+'open 106601015.ctl'
+'set display color white'
+'set map 1 1 4'
+'c'
+'set vpage 0 11 0 8.5'
+'set parea 0.5 5.3 0 8.5'
+'d rh'
+'draw title 106601015_1000RH'
+
+'set lev 850'
+'set ccolor rainbow'
+'set vpage 0 11 0 8.5'
+'set parea 5.7 10.5 0 8.5'
+'d rh'
+'draw title 106601015_850RH'
+'printim 106601015_RH.gif'
+

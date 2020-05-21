@@ -1,0 +1,20 @@
+#!/bin/csh
+
+foreach f ($*)
+  gs -r300 -sDEVICE=ppmraw -q -dNOPAUSE -sOutputFile=$f:r.ppm - < $f
+
+#  @ i = 1
+#    foreach p ($f:r.ppm)
+#    if ($i < 100) set out = 0$i
+#    if ($i < 10) set out = 00$i
+        echo "ppmtogif < $f:r.ppm > $f:r.gif"
+            pnmrotate 0 $f:r.ppm | ppmtogif > $f:r.gif
+#            convert -rotate 0 -crop 0x0 $p:r.gif $p:r.gif
+            /bin/rm $f:r.ppm
+#     @ i ++
+#                  end
+
+#                   if (! -e $f:r.2.gif) mv $f:r.1.gif $f:r.gif
+#    end
+
+ /bin/rm core.* 

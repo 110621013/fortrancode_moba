@@ -1,0 +1,6 @@
+'reinit'
+'open 106601015_hw7.ctl'
+'set x 1'
+'set y 1'
+'set t 1 24'
+'d s2g1d(pm25(stid=1))'
